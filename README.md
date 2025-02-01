@@ -2,19 +2,19 @@
 
 ## Generating features based on wildfires' points of origin 
 
-**Creating a map of approximate wildfire perimeters from 1999 to 2014**
-<div align="center">
-<img src="https://github.com/user-attachments/assets/5d36d394-8342-4114-b062-03763252f292" width="600">
-</div>
-
 **Finding the closest settlements to wildfires**
 <div align="center">
 <img src="https://github.com/user-attachments/assets/fbe4c307-0e82-4077-b9f6-7ac8bdfcb638" width="500">
 </div>
 
-**Finding vegetation, terrain, and weather characteristics of territories affected by wildfires**
+**Computing vegetation, terrain, and weather characteristics of territories affected by wildfires**
 <div align="center">
 <img src="https://github.com/user-attachments/assets/194d7aa8-c017-46c3-9cb0-745c2d842729" width="500">
+</div>
+
+**Creating a map of wildfire centroids from 1999 to 2014**
+<div align="center">
+<img src="https://github.com/user-attachments/assets/5d36d394-8342-4114-b062-03763252f292" width="600">
 </div>
 
 ## Transforming satellite-derived vector smoke data
