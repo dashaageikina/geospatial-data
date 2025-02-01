@@ -44,9 +44,4 @@
 <img src="https://github.com/user-attachments/assets/389c26b3-84b6-4aaa-a343-9888b24910c7" width="600">
 </div>
 
-**Creating a map of PM2.5 components at the county-level**
-<div align="center">
-<img src="https://github.com/user-attachments/assets/d512744f-a7db-41f4-b034-7e020f302da5" width="500">
-</div>
-
 **Note: My legal first name is Daria, which I use for official matters and publications.*
