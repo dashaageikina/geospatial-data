@@ -6,7 +6,7 @@ This portfolio presents a sample of projects showcasing my skills in geospatial 
 
 ### Vector Data
 
-**Building a dataset of county-level wildfire smoke metrics from satellite-derived wildfire smoke polygon data**
+**Generating county-level metrics of wildfire smoke from satellite-derived wildfire smoke polygon data**
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 10px;">
     <img src="https://github.com/user-attachments/assets/10e7d8e0-9442-4a49-8d9a-d5a42df61f49" width="400">
