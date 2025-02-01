@@ -4,7 +4,7 @@
 
 **Creating a map of approximate wildfire perimeters from 1999 to 2014**
 <div align="center">
-<img src="https://github.com/user-attachments/assets/5d36d394-8342-4114-b062-03763252f292" width="700">
+<img src="https://github.com/user-attachments/assets/5d36d394-8342-4114-b062-03763252f292" width="600">
 </div>
 
 **Finding the closest settlements to wildfires**
@@ -14,7 +14,7 @@
 
 **Finding vegetation, terrain, and weather characteristics of territories affected by wildfires**
 <div align="center">
-<img src="https://github.com/user-attachments/assets/194d7aa8-c017-46c3-9cb0-745c2d842729" width="700">
+<img src="https://github.com/user-attachments/assets/194d7aa8-c017-46c3-9cb0-745c2d842729" width="500">
 </div>
 
 ## Transforming satellite-derived vector smoke data
@@ -29,16 +29,16 @@
 
 ## Generating features for U.S. carbon offset projects
 <div align="center">
-<img src="https://github.com/user-attachments/assets/3ddaf18e-0e92-4755-b0ff-7d4f99b66817" width="700">
+<img src="https://github.com/user-attachments/assets/3ddaf18e-0e92-4755-b0ff-7d4f99b66817" width="600">
 </div>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/389c26b3-84b6-4aaa-a343-9888b24910c7" width="700">
+<img src="https://github.com/user-attachments/assets/389c26b3-84b6-4aaa-a343-9888b24910c7" width="600">
 </div>
 
 **Creating a map of PM2.5 components at the county-level**
 <div align="center">
-<img src="https://github.com/user-attachments/assets/d512744f-a7db-41f4-b034-7e020f302da5" width="700">
+<img src="https://github.com/user-attachments/assets/d512744f-a7db-41f4-b034-7e020f302da5" width="500">
 </div>
 
 **Note: My legal first name is Daria, which I use for official matters and publications.*
