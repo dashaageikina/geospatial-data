@@ -23,7 +23,7 @@ This portfolio presents a sample of projects showcasing my skills in geospatial 
 
 ### Vector & Raster Data
 
-**Computing vegetation, terrain, and weather characteristics of territories affected by wildfires**
+**Computing weather and land cover characteristics of territories affected by wildfires**
 <div align="center">
 <img src="https://github.com/user-attachments/assets/194d7aa8-c017-46c3-9cb0-745c2d842729" width="500">
 </div>
