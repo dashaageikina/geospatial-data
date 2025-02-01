@@ -22,7 +22,7 @@
 
 ## Geospatial Data Generation & Aggregation
 
-## Geospatial Data Visualization
+## Geospatial Data Analysis & Visualization
 
 **Creating a map of wildfire centroids from 1999 to 2014**
 <div align="center">
