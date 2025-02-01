@@ -1,4 +1,4 @@
-# Portfolio of Geospatial Projects by Dasha Ageikina*
+# Portfolio of Geospatial Projects by Dasha* Ageikina
 
 ## Generating features based on wildfires' points of origin 
 
