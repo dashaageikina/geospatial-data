@@ -1,25 +1,33 @@
 # Portfolio of Geospatial Projects by Dasha* Ageikina
 
-## Generating features based on wildfires' points of origin 
+## Geospatial Data Transformation
+
+### Vector Data
+
+**Building a dataset of county-level smoke metrics**
 
 **Finding the closest settlements to wildfires**
 <div align="center">
 <img src="https://github.com/user-attachments/assets/fbe4c307-0e82-4077-b9f6-7ac8bdfcb638" width="500">
 </div>
 
+### Raster Data
+
+### Vector & Raster Data
+
 **Computing vegetation, terrain, and weather characteristics of territories affected by wildfires**
 <div align="center">
 <img src="https://github.com/user-attachments/assets/194d7aa8-c017-46c3-9cb0-745c2d842729" width="500">
 </div>
 
+## Geospatial Data Generation & Aggregation
+
+## Geospatial Data Visualization
+
 **Creating a map of wildfire centroids from 1999 to 2014**
 <div align="center">
 <img src="https://github.com/user-attachments/assets/5d36d394-8342-4114-b062-03763252f292" width="600">
 </div>
-
-## Transforming satellite-derived vector smoke data
-
-**Building a dataset of county-level smoke metrics**
 
 **Creating maps of annual smoke characteristics across U.S. counties**
 <div style="display: flex; justify-content: center; gap: 10px;">
@@ -27,7 +35,7 @@
   <img src="https://github.com/user-attachments/assets/d24c7180-46ea-42fd-a9f2-feeee6388127" width="400">
 </div>
 
-## Generating features for U.S. carbon offset projects
+**Map of carbon projects**
 <div align="center">
 <img src="https://github.com/user-attachments/assets/3ddaf18e-0e92-4755-b0ff-7d4f99b66817" width="600">
 </div>
