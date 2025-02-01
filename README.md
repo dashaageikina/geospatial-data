@@ -3,7 +3,7 @@
 ## Generating features based on wildfires' points of origin 
 
 **Creating a map of approximate wildfire perimeters from 1999 to 2014**
-![incidents_map2](https://github.com/user-attachments/assets/5d36d394-8342-4114-b062-03763252f292)
+<img src="https://github.com/user-attachments/assets/5d36d394-8342-4114-b062-03763252f292" width="500">
 
 **Finding the closest settlements to wildfires**
 ![cities](https://github.com/user-attachments/assets/fbe4c307-0e82-4077-b9f6-7ac8bdfcb638)
