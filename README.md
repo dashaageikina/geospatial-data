@@ -22,8 +22,10 @@
 **Building a dataset of county-level smoke metrics**
 
 **Creating maps of annual smoke characteristics across U.S. counties**
-![smoke_days2_maps](https://github.com/user-attachments/assets/10e7d8e0-9442-4a49-8d9a-d5a42df61f49)
-![smoke_cover2_maps](https://github.com/user-attachments/assets/d24c7180-46ea-42fd-a9f2-feeee6388127)
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/10e7d8e0-9442-4a49-8d9a-d5a42df61f49" width="400">
+  <img src="https://github.com/user-attachments/assets/d24c7180-46ea-42fd-a9f2-feeee6388127" width="400">
+</div>
 
 ## Generating features for U.S. carbon offset projects
 <div align="center">
