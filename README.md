@@ -9,8 +9,8 @@ This portfolio presents a sample of projects showcasing my skills in geospatial 
 **Generating county-level metrics of wildfire smoke from satellite-derived wildfire smoke polygon data**
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="https://github.com/user-attachments/assets/10e7d8e0-9442-4a49-8d9a-d5a42df61f49" width="400">
-    <img src="https://github.com/user-attachments/assets/d24c7180-46ea-42fd-a9f2-feeee6388127" width="400">
+    <img src="https://github.com/user-attachments/assets/10e7d8e0-9442-4a49-8d9a-d5a42df61f49" width="500">
+    <img src="https://github.com/user-attachments/assets/d24c7180-46ea-42fd-a9f2-feeee6388127" width="500">
   </div>
 </div>
 
