@@ -21,6 +21,8 @@ This portfolio presents a sample of projects showcasing my skills in geospatial 
 
 ### Raster Data
 
+**Data aggregation**
+
 ### Vector & Raster Data
 
 **Computing weather and land cover characteristics of territories affected by wildfires**
