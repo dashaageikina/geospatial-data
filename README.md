@@ -14,11 +14,6 @@ This portfolio presents a sample of projects showcasing my skills in geospatial 
   </div>
 </div>
 
-**Finding the closest settlements to wildfires**
-<div align="center">
-<img src="https://github.com/user-attachments/assets/fbe4c307-0e82-4077-b9f6-7ac8bdfcb638" width="500">
-</div>
-
 ### Raster Data
 
 **Data aggregation**
