@@ -2,7 +2,7 @@
 
 This portfolio presents a sample of projects showcasing my skills in geospatial data science that I accumulated during my research work
 
-## Geospatial Data Processing
+## Geospatial Data Manipulation
 
 ### Vector Data
 
