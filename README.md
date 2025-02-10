@@ -14,17 +14,6 @@ This portfolio presents a sample of projects showcasing my skills in geospatial 
   </div>
 </div>
 
-### Raster Data
-
-**Data aggregation**
-
-### Vector & Raster Data
-
-**Computing weather and land cover characteristics of territories affected by wildfires**
-<div align="center">
-<img src="https://github.com/user-attachments/assets/194d7aa8-c017-46c3-9cb0-745c2d842729" width="500">
-</div>
-
 This project processes satellite-derived wildfire smoke data from NOAA’s Hazard Mapping System (HMS) to generate county-level metrics of smoke exposure. I use a [cleaned version](https://github.com/echolab-stanford/wildfire-map-public/tree/main/data/smoke) of the HMS dataset from Stanford’s ECHO Lab with smoke polygons, also called smoke plumes. I construct two key measures for each county-month pair:
 
 Smoke Days: The number of days in a month when any part of a county is exposed to smoke, providing an intuitive measure of smoke presence.
@@ -40,6 +29,17 @@ The metrics are constructed in two steps:
 │       ├── build_county_day_smoke.R                     : generates smoke metrics for each county-day
 │       ├── build_county_month_smoke.R                   : aggregates county-day smoke metrics at the county-month level 
 ```
+
+### Raster Data
+
+**Data aggregation**
+
+### Vector & Raster Data
+
+**Computing weather and land cover characteristics of territories affected by wildfires**
+<div align="center">
+<img src="https://github.com/user-attachments/assets/194d7aa8-c017-46c3-9cb0-745c2d842729" width="500">
+</div>
 
 ## Geospatial Data Generation
 
