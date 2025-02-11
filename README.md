@@ -27,8 +27,8 @@ The metrics are constructed in two steps:
 .
 ├── Code/                           
 │   └── smoke/
-│       ├── build_county_day_smoke.R             : generates smoke metrics for each county-day
-│       ├── build_county_month_smoke.R           : aggregates county-day smoke metrics at the county-month level 
+│       ├── build_county_day_smoke.R     : generates smoke metrics for each county-day
+│       ├── build_county_month_smoke.R   : aggregates county-day smoke metrics at the county-month level 
 ```
 
 ### Raster Data
