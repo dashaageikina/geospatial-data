@@ -11,9 +11,8 @@ library(tidyverse)
 library(readxl)
 
 rm(list=ls())
-
-path <- "/Users/dariaageikina/Downloads/wildfires/data"
-setwd(path)
+data_path <- Sys.getenv("DATA_PATH")
+setwd(paste0(data_path,"/wfs_media"))
 
 #load data on incidents
 incidents <- st_read("build_wildfire_reports/output/incidents_spatial.gpkg")
@@ -30,9 +29,8 @@ incidents$tree_cover_p <- 0
 incidents$shrub_cover_p <- 0
 incidents$herb_cover_p <- 0
 
-path <- "build_land_cover"
-input_path <- paste0(path,"/input/raw/cms_conus")
-output_path <- paste0(path,"/output")
+input_path <- paste0(data_path,"/build_land_cover/input/raw/cms_conus")
+output_path <- paste0(path,"/build_land_cover/output")
 
 #downloading data from NASA's EARTH Data, using a list of commands they provide
 wget_commands <- read_excel(paste0(input_path,"/wget_commands3.xlsx"))
@@ -67,13 +65,13 @@ for (i in 1:nrow(wget_commands)) {
 
   if (type=="TC") {
     incidents_year <- subset(incidents_year,select=c(incident_id,tree_cover_p))
-    write.csv(incidents_year,paste0(path,"/input/built/conus/tree_cover/",year,".csv"))
+    write.csv(incidents_year,paste0(data_path,"/build_land_cover/input/built/conus/tree_cover/",year,".csv"))
   } else if (type=="SC") {
     incidents_year <- subset(incidents_year,select=c(incident_id,shrub_cover_p))
-    write.csv(incidents_year,paste0(path,"/input/built/conus/shrub_cover/",year,".csv"))
+    write.csv(incidents_year,paste0(path,"/build_land_cover/input/built/conus/shrub_cover/",year,".csv"))
   } else {
     incidents_year <- subset(incidents_year,select=c(incident_id,herb_cover_p))
-    write.csv(incidents_year,paste0(path,"/input/built/conus/herb_cover/",year,".csv"))
+    write.csv(incidents_year,paste0(path,"/build_land_cover/input/built/conus/herb_cover/",year,".csv"))
   }
   
   unlink(files)
