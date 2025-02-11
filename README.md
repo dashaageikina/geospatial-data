@@ -14,7 +14,7 @@ This portfolio presents a sample of projects showcasing my skills in geospatial 
   </div>
 </div>
 
-This project processes satellite-derived wildfire smoke data from NOAA’s Hazard Mapping System (HMS) to generate county-level metrics of monthly smoke exposure. I use a [cleaned version](https://github.com/echolab-stanford/wildfire-map-public/tree/main/data/smoke) of the HMS dataset from Stanford’s ECHO Lab. It contains polygon data, with each polygon representing a smoke plume that lasted a specified amount of time (typically several hours). I construct two key measures of smoke for each county-month pair:
+I generate county-level metrics of monthly smoke exposure from satellite-derived wildfire smoke data from NOAA’s Hazard Mapping System (HMS). I use a [cleaned version](https://github.com/echolab-stanford/wildfire-map-public/tree/main/data/smoke) of the HMS dataset from Stanford’s ECHO Lab. It contains polygon data, with each polygon representing a smoke plume that lasted a specified amount of time (typically several hours). I construct two key measures of smoke for each county-month pair:
 
  - Smoke Days: The number of days in a month when any part of a county is exposed to smoke, providing an intuitive measure of smoke presence.
  - Mean Daily Smoke Hours: A weighted measure incorporating the duration and spatial coverage of smoke plumes within a county.
