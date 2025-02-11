@@ -48,6 +48,8 @@ The analysis involves three main steps:
 2. Merging Land Cover Tiles – I compile the raster tiles for each land cover class and year to create a seamless dataset.
 3. Extracting Land Cover Metrics – For each wildfire, I calculate the average percentage of tree, shrub, and grass coverage within its perimeter, using data from the year prior to the fire.
 
+The graph illustrates the trends of the fire-level averages for each land cover metric by GACC (Geographic Area Coordination Center).
+
 ```
 .
 ├── Code/                           
