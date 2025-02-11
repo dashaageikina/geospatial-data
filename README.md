@@ -33,14 +33,12 @@ The metrics are constructed in two steps:
 
 ### Raster Data
 
-**Data aggregation**
-
-### Vector & Raster Data
-
-**Computing weather and land cover characteristics of territories affected by wildfires**
+**Generating land cover metrics for wildfires from raster tiles**
 <div align="center">
-<img src="https://github.com/user-attachments/assets/194d7aa8-c017-46c3-9cb0-745c2d842729" width="500">
+<img src="https://github.com/user-attachments/assets/ad28920b-b7a0-4727-9f84-ab25b6134870" width="500">
 </div>
+
+I use raster [CMS Vegetative Lifeform Cover data](https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1809).
 
 ## Geospatial Data Generation
 
