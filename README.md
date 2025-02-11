@@ -38,7 +38,22 @@ The metrics are constructed in two steps:
 <img src="https://github.com/user-attachments/assets/ad28920b-b7a0-4727-9f84-ab25b6134870" width="500">
 </div>
 
-I use raster [CMS Vegetative Lifeform Cover data](https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1809).
+The [ICS-209-PLUS dataset](https://figshare.com/articles/dataset/ICS209-PLUS_Cleaned_databases/8048252/10) constructed by the EarthLab at the University of Colorado-Boulder contains detailed geospatial records (point-based) of U.S. wildfires between 1999 and 2014 ([paper](https://www.nature.com/articles/s41597-020-0403-0#Sec29)). My goal is to determine the extent of tree, shrub, and grass coverage in the area surrounding each wildfire's point of origin.
+
+The data on land cover classes comes from [CMS Vegetative Lifeform Cover data](https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1809) (available for free upon registration). This dataset consists of tiled raster files, organized by year and land cover class, where each pixel represents the percentage of land covered by a specific vegetation type. 
+
+The analysis involves three main steps:
+
+1. Generating Fire Perimeters – I estimate wildfire perimeters based on the point location and reported acres burned.
+2. Merging Land Cover Tiles – I compile the raster tiles for each land cover class and year to create a seamless dataset.
+3. Extracting Land Cover Metrics – For each wildfire, I calculate the average percentage of tree, shrub, and grass coverage within its perimeter, using data from the year prior to the fire.
+
+```
+.
+├── Code/                           
+│   └── land_cover/
+│       ├── build_annual_land_cover.R
+```
 
 ## Geospatial Data Generation
 
