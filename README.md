@@ -4,7 +4,7 @@ This portfolio presents a sample of projects showcasing my skills in geospatial 
 
 **Note: My legal first name is Daria, which I use for official matters and publications.*
 
-*If you have questions or if you found any mistakes, e-mail me at [dariaageikina@gmail.com](mailto:dariaageikina@gmail.com).*
+*If you have questions or if you see any mistakes, e-mail me at [dariaageikina@gmail.com](mailto:dariaageikina@gmail.com).*
 
 ## Geospatial Data Manipulation
 
