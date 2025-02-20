@@ -85,21 +85,21 @@ This project summarizes how I constructed and analyzed the dataset for [my third
 
 1. **Creating a dataset of forest parcels.** Ideally, I needed a dataset differentiating forested areas owned by separate entities, individuals, or families. Since no such open-source dataset exists, I approximated it by generating a raster dataset based on forest ownership categories. I treated each pixel as a distinct forest parcel, ensuring that different ownership classes (e.g., family-owned vs. timber company-owned forests) were properly differentiated. Finally, I aggregated the 30m resolution raster into a 1km resolution raster, more appropriate for my data analysis and also less computationally intensive. I then converted the raster into a polygon dataset and assigned a unique identifier to each polygon parcel. Also, since federal lands cannot participate in CARB’s Compliance Offset Program, I removed them from the dataset. The resulting dataset contains 647,555 eligible forest parcels.
 
-3. **Identifying program participation.** For each parcel, I determined whether it was part of a forest project and, if so, what percentage of its area was covered by the project. I focused specifically on Improved Forest Management (IFM) projects, as they make up the majority of enrolled projects. The map below visualizes parcels that participate in the program versus those that do not, with parcel boundaries scaled for better visibility.
+2. **Identifying program participation.** For each parcel, I determined whether it was part of a forest project and, if so, what percentage of its area was covered by the project. I focused specifically on Improved Forest Management (IFM) projects, as they make up the majority of enrolled projects. The map below visualizes parcels that participate in the program versus those that do not, with parcel boundaries scaled for better visibility.
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/389c26b3-84b6-4aaa-a343-9888b24910c7" width="600">
 </div>
    
-4. **Enhancing the dataset with additional geospatial features.** I added more features to the dataset by merging various geospatial data sources. Each parcel was assigned attributes including: Wildfire Hazard Potential (an index reflecting the risk of destructive wildfires), Conservation easement status, Canopy cover, Proximity to residential areas, County, Census tract, ZIP code, Housing prices, and Socioeconomic and demographic data from the U.S. Census
+3. **Enhancing the dataset with additional geospatial features.** I added more features to the dataset by merging various geospatial data sources. Each parcel was assigned attributes including: Wildfire Hazard Potential (an index reflecting the risk of destructive wildfires), Conservation easement status, Canopy cover, Proximity to residential areas, County, Census tract, ZIP code, Housing prices, and Socioeconomic and demographic data from the U.S. Census
 
-5. **Restricting the dataset to sample parcels.** Some parcels are unlikely to participate in the program due to state policies or other constraints. To ensure that the comparison between enrolled and non-enrolled parcels was meaningful, I restricted the dataset to states and ecoregions that already had IFM projects. This conservative approach helped avoid biases that could arise if eligibility criteria were correlated with wildfire risk. The final dataset is visualized in the map below. It contains 219,487 parcels.
+4. **Restricting the dataset to sample parcels.** Some parcels are unlikely to participate in the program due to state policies or other constraints. To ensure that the comparison between enrolled and non-enrolled parcels was meaningful, I restricted the dataset to states and ecoregions that already had IFM projects. This conservative approach helped avoid biases that could arise if eligibility criteria were correlated with wildfire risk. The final dataset is visualized in the map below. It contains 219,487 parcels.
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/d61d9c4f-e84a-40f8-b9a1-894c5ff3afc4" width="600">
 </div>
   
-6. **Comparing enrolled and non-enrolled parcels.** To assess differences between the two groups, I visualized key characteristics such as Wildfire Hazard Potential and Canopy cover using histograms depicted below. Additionally, I conducted cross-sectional regression analysis with clustering, both for the full sample and separately for different forest ownership classes.
+5. **Comparing enrolled and non-enrolled parcels.** To assess differences between the two groups, I visualized key characteristics such as Wildfire Hazard Potential and Canopy cover using histograms depicted below. Additionally, I conducted cross-sectional regression analysis with clustering, both for the full sample and separately for different forest ownership classes.
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 10px;">
