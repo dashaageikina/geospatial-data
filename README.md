@@ -79,7 +79,40 @@ Data is available upon request (e-mail me at [dariaageikina@gmail.com](mailto:da
 
 ## Geospatial Data Analysis & Visualization
 
-
 <div align="center">
 <img src="https://github.com/user-attachments/assets/389c26b3-84b6-4aaa-a343-9888b24910c7" width="600">
 </div>
+
+This project documents how I constructed and analyzed the dataset for my third dissertation chapter, where I compare wildfire risks for forests enrolled in [CARB's Compliance Offset Program](https://ww2.arb.ca.gov/our-work/programs/compliance-offset-program) to similar forests not enrolled in the program. The key steps in building the dataset were as follows:
+
+1. **Creating a dataset of forest units.** Ideally, I needed a dataset of forest parcels — forested areas owned by separate entities, individuals, or families. Since no open-source dataset of forest parcels exists, I approximated it by generating a raster dataset based on forest ownership categories. I treated each pixel as a distinct forest parcel, ensuring that different ownership classes (e.g., family-owned vs. timber company-owned forests) were properly differentiated. However, the raw dataset was too large and computationally intensive, so I aggregated the 30m resolution raster into a 1km resolution raster. I then converted the raster into a polygon dataset and assigned a unique identifier to each polygon for easier data processing.
+
+2. **Filtering for eligibility in CARB’s program.** Since federal lands cannot participate in CARB’s Compliance Offset Program, I removed them from the dataset. The resulting dataset contained 647,555 eligible forest parcels.
+
+3. **Identifying program participation.** For each parcel, I determined whether it was part of a forest project and, if so, what percentage of its area was covered by the project. I focused specifically on Improved Forest Management (IFM) projects, as they make up the majority of enrolled projects. The map above visualizes parcels that participate in the program versus those that do not, with parcel boundaries scaled for better visibility.
+   
+4. **Enhancing the dataset with additional geospatial features.** I added more features to the dataset by merging various geospatial data sources. Each parcel was assigned attributes including: Wildfire Hazard Potential (an index reflecting the risk of destructive wildfires), Conservation easement status, Canopy cover, Proximity to residential areas, County, Census tract, ZIP code, Housing prices, and Socioeconomic and demographic data from the U.S. Census
+
+5. **Restricting the dataset to sample parcels.** Some parcels are unlikely to participate in the program due to state policies or other constraints. To ensure that the comparison between enrolled and non-enrolled parcels was meaningful, I restricted the dataset to states and ecoregions that already had IFM projects. This conservative approach helped avoid biases that could arise if eligibility criteria were correlated with wildfire risk. The final dataset is visualized in the map below.
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/d61d9c4f-e84a-40f8-b9a1-894c5ff3afc4" width="600">
+</div>
+  
+6. **Comparing enrolled and non-enrolled parcels.** To assess differences between the two groups, I visualized key characteristics such as Wildfire Hazard Potential and Canopy cover using histograms depicted below. Additionally, I conducted cross-sectional regression analysis with clustering, both for the full sample and separately for different forest ownership classes.
+
+<div align="center">
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="https://github.com/user-attachments/assets/6f9b9554-5432-4608-b1f1-b17dfcd1295a" width="400">
+    <img src="https://github.com/user-attachments/assets/ed72ca9f-ae93-4f81-a24d-642189015061" width="400">
+  </div>
+</div>
+
+```
+.
+├── Code/                           
+│   └── CARB/
+│       ├── build_parcels.R     : build a vector dataset with all parcels
+│       ├── add_all_features.ipynb : merge parcels with projects and other features
+│       ├── data_analysis.ipynb : create a sample of parcels, visualize the data, and conduct regression analysis
+```
