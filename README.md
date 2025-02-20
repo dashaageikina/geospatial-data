@@ -80,7 +80,7 @@ Finally, I compiled all data into a file, carb_forest_projects.kml, which includ
 .
 ├── Output/                           
 │   └── forest_projects/
-│       ├── carb_forest_projects.kml
+│       ├── carb_forest_projects.gpkg
 ```
 
 
