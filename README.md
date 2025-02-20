@@ -72,16 +72,7 @@ The graph illustrates the trends of the fire-level averages for each land cover 
 
 My goal was to build a geospatial database of all projects with their locations. I automated the downloading process and compiled the geospatial data using web scraping and data cleaning. However, a significant number of projects lack geospatial files and only have documentation in PDF format. For these projects, I manually generated vector polygon data by overlaying images in Google Earth Pro.
 
-Finally, I compiled all data into a file, carb_forest_projects.kml, which includes project names, project types, and locations for most projects as of December 1, 2025. The map above shows project centroids categorized by project type, with marker sizes varying based on project areas. 
-
-**Disclaimer**: This project is provided for informational purposes only. While I have made efforts to ensure data accuracy, I do not guarantee its completeness or correctness. Use this data at your own risk.
-
-```
-.
-├── Output/                           
-│   └── forest_projects/
-│       ├── carb_forest_projects.gpkg
-```
+Finally, I compiled all data into a GIS data file which includes project names, project types, and locations for most projects as of December 1, 2025. The map above shows project centroids categorized by project type, with marker sizes varying based on project areas. Data is available upon request (e-mail me at [dariaageikina@gmail.com](mailto:dariaageikina@gmail.com)). **Disclaimer**: This project is provided for informational purposes only. While I have made efforts to ensure data accuracy, I do not guarantee its completeness or correctness.
 
 
 ## Geospatial Data Analysis & Visualization
