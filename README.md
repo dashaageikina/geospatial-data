@@ -63,7 +63,7 @@ The graph illustrates the trends of the fire-level averages for each land cover 
 
 ## Geospatial Data Generation
 
-**Generating polygon data from PDF maps**
+**Generating polygon data**
 <div align="center">
 <img src="https://github.com/user-attachments/assets/3ddaf18e-0e92-4755-b0ff-7d4f99b66817" width="600">
 </div>
