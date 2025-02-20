@@ -114,7 +114,7 @@ This project documents how I constructed and analyzed the dataset for [my third 
 .
 ├── Code/                           
 │   └── CARB/
-│       ├── build_parcels.R     : build a vector dataset with all parcels
+│       ├── build_parcels.R        : build a vector dataset with all parcels
 │       ├── add_all_features.ipynb : merge parcels with projects and other features
-│       ├── data_analysis.ipynb : create a sample of parcels, visualize the data, and conduct regression analysis
+│       ├── data_analysis.ipynb    : create a sample of parcels, visualize the data, and conduct regression analysis
 ```
