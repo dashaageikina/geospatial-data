@@ -72,12 +72,47 @@ The graph illustrates the trends of the fire-level averages for each land cover 
 
 My goal was to build a geospatial database of all projects with their locations. I automated the downloading process and compiled the geospatial data using web scraping and data cleaning. However, a significant number of projects lack geospatial files and only have documentation in PDF format. For these projects, I manually generated vector polygon data by overlaying images in Google Earth Pro.
 
-Finally, I compiled all data into a GIS data file which includes project names, project types, and locations for most projects as of December 1, 2025. The map above shows project centroids categorized by project type, with marker sizes varying based on project areas. Data is available upon request (e-mail me at [dariaageikina@gmail.com](mailto:dariaageikina@gmail.com)). **Disclaimer**: This project is provided for informational purposes only. While I have made efforts to ensure data accuracy, I do not guarantee its completeness or correctness.
+Finally, I compiled all data into a GIS data file which includes project names, project types, and locations for most projects as of December 1, 2025. The map above shows project centroids categorized by project type, with marker sizes varying based on project areas. 
+
+Data is available upon request (e-mail me at [dariaageikina@gmail.com](mailto:dariaageikina@gmail.com)). **Disclaimer**: This project is provided for informational purposes only. While I have made efforts to ensure data accuracy, I do not guarantee its completeness or correctness.
 
 
 ## Geospatial Data Analysis & Visualization
 
+**Building data for the analysis of fire risks in carbon sequestration projects**
+
+This project summarizes how I constructed and analyzed the dataset for [my third dissertation chapter](https://dashaageikina.notion.site/Adverse-Selection-in-California-s-Compliance-Offset-Program-Does-the-Program-Sequester-Carbon-in-Fo-188040298a0180cc8fe7c54fdb9e86ca), where I compare wildfire risks for forests enrolled in [CARB's Compliance Offset Program](https://ww2.arb.ca.gov/our-work/programs/compliance-offset-program) to similar forests not enrolled in the program. The key steps in building the dataset were as follows:
+
+1. **Creating a dataset of forest parcels.** Ideally, I needed a dataset differentiating forested areas owned by separate entities, individuals, or families. Since no such open-source dataset exists, I approximated it by generating a raster dataset based on forest ownership categories. I treated each pixel as a distinct forest parcel, ensuring that different ownership classes (e.g., family-owned vs. timber company-owned forests) were properly differentiated. Finally, I aggregated the 30m resolution raster into a 1km resolution raster, more appropriate for my data analysis and also less computationally intensive. I then converted the raster into a polygon dataset and assigned a unique identifier to each polygon parcel. The resulting dataset contains 647,555 eligible forest parcels.
+
+2. **Identifying program participation.** For each parcel, I determined whether it was part of a forest project and, if so, what percentage of its area was covered by the project. I focused specifically on Improved Forest Management (IFM) projects, as they make up the majority of enrolled projects. The map below visualizes parcels that participate in the program versus those that do not, with parcel boundaries scaled for better visibility.
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/389c26b3-84b6-4aaa-a343-9888b24910c7" width="600">
 </div>
+   
+3. **Enhancing the dataset with additional geospatial features.** I added more features to the dataset by merging various geospatial data sources. Each parcel was assigned attributes including: Wildfire Hazard Potential (an index reflecting the risk of destructive wildfires), Conservation easement status, Canopy cover, Proximity to residential areas, County, Census tract, ZIP code, Housing prices, and Socioeconomic and demographic data from the U.S. Census
+
+4. **Restricting the dataset to sample parcels.** Some parcels are unlikely to participate in the program due to state policies or other constraints. To ensure that the comparison between enrolled and non-enrolled parcels was meaningful, I restricted the dataset to states and ecoregions that already had IFM projects. This conservative approach helped avoid biases that could arise if eligibility criteria were correlated with wildfire risk. The final dataset is visualized in the map below. It contains 219,487 parcels.
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/d61d9c4f-e84a-40f8-b9a1-894c5ff3afc4" width="600">
+</div>
+  
+5. **Comparing enrolled and non-enrolled parcels.** To assess differences between the two groups, I visualized key characteristics such as Wildfire Hazard Potential and Canopy cover using histograms depicted below. Additionally, I conducted cross-sectional regression analysis with clustering, both for the full sample and separately for different forest ownership classes.
+
+<div align="center">
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="https://github.com/user-attachments/assets/6f9b9554-5432-4608-b1f1-b17dfcd1295a" width="400">
+    <img src="https://github.com/user-attachments/assets/ed72ca9f-ae93-4f81-a24d-642189015061" width="400">
+  </div>
+</div>
+
+```
+.
+├── Code/                           
+│   └── CARB/
+│       ├── build_parcels.R        : build a vector dataset with all parcels
+│       ├── add_features.ipynb : merge parcels with projects and other features
+│       ├── data_analysis.ipynb    : create a sample of parcels, visualize the data, and conduct regression analysis
+```
