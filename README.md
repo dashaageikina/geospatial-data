@@ -1,6 +1,6 @@
 # Portfolio of Geospatial Projects by Dasha* Ageikina
 
-This portfolio presents a sample of projects showcasing my skills in geospatial data science that I accumulated during my research work.
+This portfolio showcases a selection of geospatial data science projects from my research.
 
 **Note: My legal first name is Daria, which I use for official matters and publications.*
 
